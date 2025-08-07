@@ -1,0 +1,246 @@
+.header-title{
+    color: #005FA3;
+    font-family: 'Merriweather';
+    font-style: 'Black';
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 132%;
+}
+
+body{
+    color: #000;
+}
+
+.header-contacts-text{
+    color: #000;
+    font-family: 'Lato';
+    font-style: 'Regular';
+    font-size: 13px;
+    line-height: 132%;
+}
+
+.header-links{
+    text-decoration: none;
+}
+
+.header-nav-links{
+    text-decoration: none;
+    color: #222;
+    text-transform: uppercase;
+    font-family: 'Lato';
+    font-style: 'Bold';
+    font-size: 14;
+    line-height: 132%;
+}
+
+.slide-1{
+    background-color: #000;
+    background-image: url(../img/first_screen.png);
+}
+
+.slide-1-title{
+    color:#FFF;
+    font-family: 'Merriweather';
+    font-style: 'Bold';
+    font-size: 48px;
+    line-height: 138%;
+}
+
+.slide-1-link{
+    color: #FFF;
+    font-family: 'Lato';
+    font-style: 'Regular';
+    font-size: 18px;
+    line-height: 138%;
+    background: #005FA3;
+    border: none;
+}
+
+.services{
+    background-color: #ebebeb;
+}
+
+.section-title{
+    color: #BDBDBD;
+    font-family: 'Lato';
+    font-style: 'Black';
+    font-size: 24px;
+    line-height: 138%;
+}
+
+.section-subtitle{
+    color: #333;
+    font-family: 'Merriweather';
+    font-style: 'Black';
+    font-size: 48px;
+    line-height: 144%;
+}
+
+.services-links{
+    text-decoration: none;
+    background-image: url(../img/services.png);
+    background-size: cover;
+    width: 260px;
+    min-height: 270px;
+    display: block;
+    padding: 45px;
+}
+.services-title{
+    color: #FFF;
+    font-family: 'Lato';
+    font-style: 'Black';
+    font-size: 24px;
+    line-height: 126%;
+}
+
+.services-list{
+    background-image: url(../img/services.png);
+    background-color: #000;
+}
+
+.about-us-text{
+    color:#000;
+    font-family: 'Lato';
+    font-style: 'Light';
+    font-size: 18px;
+    line-height: 138%;
+}
+
+.about-us-blocks-title{
+    color:#000;
+    font-family: 'Lato';
+    font-style: 'Black';
+    font-size: 55px;
+    line-height: 132%;
+}
+
+.about-us-blocks{
+    color:#000;
+    font-family: 'Lato';
+    font-style: 'Bold';
+    font-size: 14px;
+    line-height: 132%;
+}
+
+.about-us-blocks-links{
+    color: #005FA3;
+    font-family: 'Lato';
+    font-style: 'Bold';
+    font-size: 14px;
+    line-height: 132%;
+}
+
+.partners{
+    background-color: #ebebeb;
+}
+
+.all-feedbacks{
+    margin:0 auto;
+}
+
+.feedbacks{
+    background-color: #ebebeb;
+    width: 1110px;
+    min-height: 320px;
+    padding: 45px 95px;
+    box-sizing: border-box;
+
+}
+
+.feedback-button{
+    color: #f9f9f9;
+    background-color: #005fa3;
+    width: 270px;
+    min-height: 60px;
+    border: none;
+}
+
+.feedback-text{
+    color:#000;
+    font-family: 'Lato';
+    font-style: 'Light';
+    font-size: 18px;
+    line-height: 138%;
+    width: 920px;
+    min-height: 23px;
+}
+
+.feedback-client{
+    width: 340px;
+    min-height: 80px;
+    padding-top: 80px;
+}
+
+.feedback-username{
+    color:#000;
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 138%;
+
+}
+
+.feedback-user-from{
+    color: #4F4F4F;
+    font-family: 'Lato';
+    font-style: 'Regular';
+    font-size: 14px;
+    line-height: 138%;
+}
+.feedback-dotes{
+    background-color: #FFF;
+    border: none;
+    width: 10px;
+    min-height: 10px;
+    padding: 0px;
+}
+.feedback-arrows{
+    background: #005FA3;
+    border: none;
+}
+
+.contact-title{
+    color:#FFF;
+    font-family: 'Merriweather';
+    font-style: 'Black';
+    font-size: 48px;
+    line-height: 144%;
+}
+
+.contact{
+    background-color: #000;
+    background-image: url(../img/first_screen.png);
+}
+
+.contact-subtitle{
+    color:#FFF;
+    font-family: 'Lato';
+    font-style: 'Light';
+    font-size: 18px;
+    line-height: 138%;
+}
+
+.contacts-links{
+text-decoration: none;
+}
+
+.contact-info{
+    color:#FFF;
+    font-family: 'Lato';
+    font-style: 'Light';
+    font-size: 21px;
+    line-height: 138%;
+}
+
+.info{
+    font-family: 'Lato';
+    font-style: 'Light';
+    font-size: 14px;
+    line-height: 138%;
+    background-image: none;
+    background-color: #f9f9f9;
+}
+
+.blue-text{
+    color: #005fa3;
+}
