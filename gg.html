@@ -4,17 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- fonts лучше подключать локально -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
   <!-- место для свайпера -->
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
   
@@ -161,13 +153,14 @@
       <div class="about-us__container container">
         <div class="about-us-wrapper">
           <h2 class="section__title">О нас</h2>
-          <h3 class = "section__subtitle ">Комапания <span class="blue-text">ИвановПром </span> </h3>
+          <h3 class = "section__subtitle ">Комапания</h3>
+          <h3 class = "section__subtitle blue-text ">ИвановПром</h3>
           <p class="about-us__text section__text" >Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</p>
         </div>
         
         <div class="about-us-grid">
 
-            <article class="about-us-grid__item about-us-card">   <!--нужен ли about-us-card? -->
+            <article class="about-us-grid__item about-us-card">   
               <p class="item__title">90</p> 
               <p class="item__text">Завершено крупных сделок</p>
               <a class="item__links" href="#">Все кейсы</a>
@@ -198,26 +191,26 @@
       <div class="container">
         <h2 class="section__title">Наши клиенты</h2>
         <h3 class="section__subtitle ">С нами работают</h3>
-        <ul class="partners__list">
-          <li class="partners__list-item">
+        <ul class="partners-grid">
+          <li class="partners-list-item">
             <a href="#"> 
               <img src="./img/partners.png" alt="Партнер"> 
             </a> 
           </li>
 
-          <li class="partners__list-item">
+          <li class="partners-list-item">
             <a href="#"> 
               <img src="./img/partners.png" alt="Партнер"> 
             </a> 
           </li>
 
-          <li class="partners__list-item">
+          <li class="partners-list-item">
             <a href="#"> 
               <img src="./img/partners.png" alt="Партнер"> 
             </a> 
           </li>
 
-          <li class="partners__list-item">
+          <li class="partners-list-item">
             <a href="#"> 
               <img src="./img/partners.png" alt="Партнер"> 
             </a> 
@@ -234,8 +227,8 @@
           </div>
 
           <div class="slider__arrows">
-            <button type="button" class="slider__arrows-item" disabled><img src="./img/arrow_back.svg" alt="arrow_back"></button>
-          <button type="button" class="slider__arrows-item"><img src="./img/arrow_forward.svg" alt="arrow_forward"></button>
+            <button type="button" class="slider__arrows-item-prev"><img src="./img/arrow_back.svg" alt="arrow_back"></button>
+            <button type="button" class="slider__arrows-item-next"><img src="./img/arrow_forward.svg" alt="arrow_forward"></button>
           </div>
         </div>
       </div>
@@ -245,107 +238,169 @@
     <section class="feedback container">
       <h2 class="section__title">Отзывы</h2>
       <h3 class="section__subtitle feedback__subtitle" >Ваши благодарности</h3>
-      <ul class="feedback-card-list">
-        <li class="feedback-card">
-          <blockquote class = "feedback-card__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. </blockquote>
-          <div class="feedback-card__author">
-            <div class="feedback-card__author-img">
-              <img src="./img/woman.png" alt="Женщина">
-            </div>
+      <div class="swiper">
+        <ul class="feedback-card-list swiper-wrapper">
+          <li class="feedback-card swiper-slide">
+            <blockquote class = "feedback-card__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. </blockquote>
+            <div class="feedback-card__author">
+              <div class="feedback-card__author-img">
+                <img src="./img/woman.png" alt="Женщина">
+              </div>
 
-            <div class="feedback-card__author-info">
-              <div class="feedback-card__author-info-display">
-                <p class="feedback-card__author-username">Екатерина Иванова</p>
-                <p class="feedback-card__author-org">Директор ООО “Раз-два”</p>
+              <div class="feedback-card__author-info">
+                <div class="feedback-card__author-info-display">
+                  <p class="feedback-card__author-username">Екатерина Иванова</p>
+                  <p class="feedback-card__author-org">Директор ООО “Раз-два”</p>
+                </div>
               </div>
             </div>
+          </li>
+
+          <li class="feedback-card swiper-slide">
+            <blockquote class = "feedback-card__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. </blockquote>
+            <div class="feedback-card__author">
+              <div class="feedback-card__author-img">
+                <img src="./img/woman.png" alt="Женщина">
+              </div>
+
+              <div class="feedback-card__author-info">
+                <div class="feedback-card__author-info-display">
+                  <p class="feedback-card__author-username">Екатерина Иванова</p>
+                  <p class="feedback-card__author-org">Директор ООО “Раз-два”</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="feedback-card swiper-slide">
+            <blockquote class = "feedback-card__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. </blockquote>
+            <div class="feedback-card__author">
+              <div class="feedback-card__author-img">
+                <img src="./img/woman.png" alt="Женщина">
+              </div>
+
+              <div class="feedback-card__author-info">
+                <div class="feedback-card__author-info-display">
+                  <p class="feedback-card__author-username">Екатерина Иванова</p>
+                  <p class="feedback-card__author-org">Директор ООО “Раз-два”</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="feedback-card swiper-slide">
+            <blockquote class = "feedback-card__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. </blockquote>
+            <div class="feedback-card__author">
+              <div class="feedback-card__author-img">
+                <img src="./img/woman.png" alt="Женщина">
+              </div>
+
+              <div class="feedback-card__author-info">
+                <div class="feedback-card__author-info-display">
+                  <p class="feedback-card__author-username">Екатерина Иванова</p>
+                  <p class="feedback-card__author-org">Директор ООО “Раз-два”</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul> 
+        <!-- <div class="feedback__slider slider">
+          <div class="slider__dotes ">
+            <button class="slider__dotes-item feedback__dotes-item" type="button"><img src="./img/dot.png"> </button>
+            <button class="slider__dotes-item feedback__dotes-item" type="button"><img src="./img/dot.png"> </button>
+            <button class="slider__dotes-item feedback__dotes-item" type="button"><img src="./img/full_dot.png"> </button>
+            <button class="slider__dotes-item feedback__dotes-item" type="button"><img src="./img/dot.png"> </button>
           </div>
-        </li>
-
-        <!-- <li>
-          <blockquote class = "feedback-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. </blockquote>
-          <img src="./img/woman.png" alt="Женщина">
-          <p class="feedback-username">Екатерина Иванова</p>
-          <p class="feedback-user-from">Директор ООО “Раз-два”</p>
-        </li>
-
-        <li>
-          <blockquote class = "feedback-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. </blockquote>
-          <img src="./img/woman.png" alt="Женщина">
-          <p class="feedback-username">Екатерина Иванова</p>
-          <p class="feedback-user-from">Директор ООО “Раз-два”</p>
-        </li>
-
-        <li>
-          <blockquote class = "feedback-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. </blockquote>
-          <img src="./img/woman.png" alt="Женщина">
-          <p class="feedback-username">Екатерина Иванова</p>
-          <p class="feedback-user-from">Директор ООО “Раз-два”</p>
-        </li> -->
-      </ul> 
-
-      <div class="feedback__slider slider">
-
-      <div class="slider__dotes ">
-        <button class="slider__dotes-item feedback__dotes-item" type="button"><img src="./img/dot.png"> </button>
-        <button class="slider__dotes-item feedback__dotes-item" type="button"><img src="./img/dot.png"> </button>
-        <button class="slider__dotes-item feedback__dotes-item" type="button"><img src="./img/full_dot.png"> </button>
-        <button class="slider__dotes-item feedback__dotes-item" type="button"><img src="./img/dot.png"> </button>
+        
+          <div class="slider__arrows">
+            <button type="button" class="slider__arrows-item-prev"><img src="./img/arrow_back.svg" alt="arrow_back"></button>
+          <button type="button" class="slider__arrows-item-next "><img src="./img/arrow_forward.svg" alt="arrow_forward"></button>
+          </div>
+        </div> -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
-
-      <div class="slider__arrows">
-        <button type="button" class="slider__arrows-item" disabled><img src="./img/arrow_back.svg" alt="arrow_back"></button>
-      <button type="button" class="slider__arrows-item"><img src="./img/arrow_forward.svg" alt="arrow_forward"></button>
-      </div>
-
-      </div>
-      
 
     </section>
   </main>
 
-  <footer class="contacts">
-    <div class="container">
-      <div class="contacts__description">
-        <h2 class="contacts__description__title">Связь с нами</h2>
-      <h3 class="contacts__description__subtitle">У вас остались вопросы? Напишите нам - мы ответим в ближайшее время!</h3>
-      <ul class="contacts__description_display">
-        <li class="contacts__description__phone">
-          <a class="contacts__description__links" href="tel:81112223344">
-            <img src="./img/phone_w.svg" alt="phone" class="contacts__description__img">
-            <span class="contacts__description__value">+7 (111) 222-33-44</span>
-          </a>
-        </li>
+  <footer>
+    <div class="contacts">
+      <div class="container contacts__container">
+        <div class="contacts__description">
+          <h2 class="description__title">Связь с нами</h2>
+          <h3 class="description__subtitle">У вас остались вопросы? Напишите нам - мы ответим в ближайшее время!</h3>
+        <ul class="description-list">
+          <li class="description__phone">
+            <a class="description__links" href="tel:81112223344">
+              <img src="./img/phone_w.svg" alt="phone" class="description__img">
+              <span class="description__text">+7 (111) 222-33-44</span>
+            </a>
+          </li>
 
-        <li class="contacts__description__mail">
-          <a class="contacts__description__links" href="mailto:order@bu-one.ru">
-            <img src="./img/e-mail_w.svg" alt="e-mail" class="contacts__description__img">
-            <span class="contacts__description__value">order@bu-one.ru</span>
-          </a>
-        </li>
-      </ul>
+          <li class="description__mail">
+            <a class="description__links" href="mailto:order@bu-one.ru">
+              <img src="./img/e-mail_w.svg" alt="e-mail" class="description__img">
+              <span class="description__text">order@bu-one.ru</span>
+            </a>
+          </li>
+        </ul>
+        </div>
+
+        <form class="contacts__form" action="#">
+          <div class="form__user">
+            <label class="user__name">
+              <span class="label-text">Имя</span>
+              <input placeholder="Иван" required>
+            </label>
+
+            <label class="user__surname">
+              <span class="label-text">Фамилия</span>
+              <input placeholder="Иванов" required>
+            </label>
+          </div>
+
+          <div class="form__message">
+            <label>
+              <span class="label-text">Сообщение</span>
+              <textarea cols="49"> </textarea>
+            </label>
+          </div>
+
+          <button class="form__button" type="submit">
+            Отправить сообщение
+          </button>
+
+        </form>
       </div>
     </div>
-
-    <div class="contacts__form">
-
-    <div>
-      Форма
-    </div>
-
-    <button class="contacts__form__button" type="button">
-      Отправить сообщение
-    </button>
-
-    </div>
-    
-  </footer>
-
-  <div class="addit-info">
+    <div class="addit-info">
       <p>2019 (с) Все права защищены. БухОне.ру</p>
       <p>Разработано: BuhOne</p>
     </div>
-
+  </footer>
 </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    slidesPerView: 1,
+    navigation: false,
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    });
+  </script>
 
 </html>

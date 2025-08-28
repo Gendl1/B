@@ -1,3 +1,51 @@
+@font-face {
+    font-family:"Lato regular";
+    src: local("Lato"),
+    url("../fonts/Lato/Lato-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-display:swap;
+}
+
+@font-face {
+    font-family:"Lato bold";
+    src: local("Lato"),
+    url("../fonts/Lato/Lato-Bold.woff2") format("woff2");
+    font-style: normal;
+    font-display:swap;
+}
+
+@font-face {
+    font-family:"Lato black";
+    src: local("Lato"),
+    url("../fonts/Lato/Lato-Black.woff2") format("woff2");
+    font-style: normal;
+    font-display:swap;
+}
+
+@font-face {
+    font-family:"Lato light";
+    src: local("Lato"),
+    url("../fonts/Lato/Lato-Light.woff2") format("woff2");
+    font-style: normal;
+    font-display:swap;
+}
+
+@font-face {
+    font-family:"Merriweather black";
+    src: local("Merriweather"),
+    url("../fonts/Merriweather/Merriweather-Black.woff2") format("woff2");
+    font-style: normal;
+    font-display:swap;
+}
+
+@font-face {
+    font-family:"Merriweather bold";
+    src: local("Merriweather"),
+    url("../fonts/Merriweather/Merriweather-Bold.woff2") format("woff2");
+    font-style: normal;
+    font-display:swap;
+}
+
 .container {
     width: 1115px;
     margin: 0 auto;
@@ -11,7 +59,7 @@
 .header {
     padding: 22px 0px 29px;
     display: flex;
-    gap: 226px;
+    justify-content: space-between;
 }
 
 .header__logo {
@@ -31,8 +79,7 @@
 
 .logo__txt {
     color: #005FA3;
-    font-family: 'Merriweather';
-    font-style: 'Black';
+    font-family: 'Merriweather black';
     font-weight: 900;
     font-size: 36px;
     line-height: 132%;
@@ -55,8 +102,7 @@ body {
 
 .info__contacts-text {
     color: #000;
-    font-family: 'Lato';
-    font-style: 'Regular';
+    font-family: 'Lato regular';
     font-size: 13px;
     line-height: 132%;
 }
@@ -86,8 +132,7 @@ body {
     text-decoration: none;
     color: #222;
     text-transform: uppercase;
-    font-family: 'Lato';
-    font-style: 'Bold';
+    font-family: 'Lato bold';
     font-size: 14;
     line-height: 132%;
 }
@@ -103,11 +148,9 @@ body {
 }
 
 .welcome-slide__title {
-    margin: 0 0 64px;
     color:#FFF;
-    font-family: 'Merriweather';
-    font-style: 'Bold';
-    font-size: 48px;
+    font-family: 'Merriweather bold';
+    font-size: clamp(0.625rem, 0.0769rem + 2.4359vw, 3rem);
     line-height: 138%;
     
 }
@@ -117,12 +160,13 @@ body {
     width: 270px;
     min-height: 60; 
     color: #FFF;
-    font-family: 'Lato';
-    font-style: 'Regular';
+    font-family: 'Lato regular';
     font-size: 18px;
     line-height: 138%;
     background: #005FA3;
     border: none;
+    margin-top: 64px;
+
 }
 
 .services {
@@ -140,25 +184,23 @@ body {
 
 .section__title {
     color: #BDBDBD;
-    font-family: 'Lato';
-    font-style: 'Black';
-    font-size: 24px;
+    font-family: 'Lato black';
+    font-size: clamp(0.625rem, 0.4231rem + 0.8974vw, 1.5rem);
     line-height: 138%;
 }
 
 .section__subtitle {
     color: #333;
-    font-family: 'Merriweather';
-    font-style: 'Black';
-    font-size: 48px;
+    font-family: 'Merriweather black';
+    font-size: clamp(0.625rem, 0.0769rem + 2.4359vw, 3rem);
     line-height: 144%;
     margin-top: 40px;
 }
 
 .services__cards-grid {
     display: grid;
-    grid-template-columns: 350px 350px 350px;
-    grid-template-rows: repeat(2,360px);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2,1fr);
     gap: 30px;
     margin-top: 102px;
 }
@@ -180,9 +222,8 @@ body {
 
 .card__title {
     color: #FFF;
-    font-family: 'Lato';
-    font-style: 'Black';
-    font-size: 24px;
+    font-family: 'Lato black';
+    font-size: clamp(0.625rem, 0.4231rem + 0.8974vw, 1.5rem);
     line-height: 126%;
 }
 
@@ -209,9 +250,8 @@ body {
 
 .about-us__text {
     color:#000;
-    font-family: 'Lato';
-    font-style: 'Light';
-    font-size: 18px;
+    font-family: 'Lato light';
+    font-size: clamp(0.625rem, 0.5096rem + 0.5128vw, 1.125rem);
     line-height: 138%;
     width: 445px;
     margin-top: 60px;
@@ -238,28 +278,26 @@ body {
 
 .item__title {
     color:#000;
-    font-family: 'Lato';
-    font-style: 'Black';
-    font-size: 55px;
+    font-family: 'Lato black';
+    font-size: clamp(0.625rem, -0.024rem + 2.8846vw, 3.4375rem);
     line-height: 132%;
-    margin: 0 0 30px;
 }
 
 .item__text {
     color:#000;
-    font-family: 'Lato';
-    font-style: 'Bold';
-    font-size: 14px;
+    font-family: 'Lato bold';
+    font-size: clamp(0.625rem, 0.5673rem + 0.2564vw, 0.875rem);
     line-height: 132%;
-    margin: 0 0 47px;
+    margin-top: 30px;
 }
 
 .item__links {
     color: #005FA3;
-    font-family: 'Lato';
-    font-style: 'Bold';
-    font-size: 14px;
+    font-family: 'Lato bold';
+    font-size: clamp(0.625rem, 0.5673rem + 0.2564vw, 0.875rem);
     line-height: 132%;
+    display: inline-block;
+    margin-top: 47px;
 }
 
 .partners {
@@ -267,9 +305,10 @@ body {
     padding: 100px 405px;
 }
 
-.partners__list {
-    display: flex;
-    justify-content: space-between;
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
     margin: 80px 0 0;
 }
 
@@ -300,13 +339,20 @@ body {
 .slider__arrows {
 }
 
-.slider__arrows-item {
+.slider__arrows-item-prev {
     background: #005FA3;
     border: none;
     width: 60px;
     min-height: 60px;
     padding: 0;
-    
+}
+
+.slider__arrows-item-next {
+    background: #005FA3;
+    border: none;
+    width: 60px;
+    min-height: 60px;
+    padding: 0;
 }
 
 .feedback{
@@ -321,20 +367,20 @@ body {
     background-color: #ebebeb;
     width: 1110px;
     min-height: 320px;
-    padding: 45px 95px;
     box-sizing: border-box;
     margin-top: 80px;
 }
 
 .feedback-card {
-
+    background-color: #ebebeb;
+    padding: 45px 0 45px 95px;
+    width: 1110px;
 }
 
 .feedback-card__text{
     color:#000;
-    font-family: 'Lato';
-    font-style: 'Light';
-    font-size: 18px;
+    font-family: 'Lato light';
+    font-size: clamp(0.625rem, 0.5096rem + 0.5128vw, 1.125rem);
     line-height: 138%;
     width: 920px;
     min-height: 23px;
@@ -354,18 +400,16 @@ body {
 
 .feedback-card__author-username {
     color:#000;
-    font-family: 'Lato';
-    font-weight: bold;
-    font-size: 18px;
+    font-family: 'Lato bold';
+    font-size: clamp(0.625rem, 0.5096rem + 0.5128vw, 1.125rem);
     line-height: 138%;
 
 }
 
 .feedback-card__author-org {
     color: #4F4F4F;
-    font-family: 'Lato';
-    font-style: 'Regular';
-    font-size: 14px;
+    font-family: 'Lato regular';
+    font-size: clamp(0.625rem, 0.5673rem + 0.2564vw, 0.875rem);
     line-height: 138%;
 }
 
@@ -393,79 +437,107 @@ body {
     display: flex;
 }
 
+.contacts__container {
+    display: flex;
+    gap:100px
+}
+
 .contacts__description {
     width: 554px;
 }
 
-.contacts__description__title {
+.description__title {
     color:#FFF;
-    font-family: 'Merriweather';
-    font-style: 'Black';
-    font-size: 48px;
+    font-family: 'Merriweather black';
+    font-size: clamp(0.625rem, 0.0769rem + 2.4359vw, 3rem);
     line-height: 144%;
-    margin: 0 0 60px;
 }
 
-.contacts__description__subtitle {
+.description__subtitle {
     color:#FFF;
-    font-family: 'Lato';
-    font-style: 'Light';
-    font-size: 18px;
+    font-family: 'Lato light';
+    font-size: clamp(0.625rem, 0.5096rem + 0.5128vw, 1.125rem);
     line-height: 138%;
-    margin: 0 0 72px;
+    margin-top: 60px;
 }
 
-.contacts__description_display {
+.description-list {
     display: flex;
+    margin-top: 73px;
 }
 
-.contacts__description__phone {
+.description__phone {
     margin: 0 40px 0 0;
 }
 
-.contacts__description__links {
+.description__links {
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.contacts__description__img {
+.description__img {
     margin: 0 16px 0 0;
 }
 
-.contacts__description__value{
+.description__text{
     color:#FFF;
-    font-family: 'Lato';
-    font-style: 'Light';
-    font-size: 21px;
+    font-family: 'Lato light';
+
+    font-size: clamp(0.625rem, 0.4663rem + 0.7051vw, 1.3125rem);
     line-height: 138%;
 }
 
-.contacts__description__mail {
+.description__mail {
 
 }
 
 .contacts__form {
     width: 554px;
+    position: relative;
 }
 
-.contacts__form__button {
+.form__button {
     width: 270px;
     min-height: 60px;
     padding: 19px 18px;
     background: #005FA3;
     border: none;
     color: #FFF;
-    font-family: 'Lato';
-    font-style: 'Regular';
+    font-family: 'Lato regular';
     font-size: 18px;
     line-height: 138%;
 }
 
+.form {
+}
+
+.form__user {
+    display: flex;
+}
+
+.label-text {
+    display: block;
+    color: #FFF;
+}
+
+.user__name {
+    margin: 0 30px 0 0;
+}
+
+.form__button {
+    position: absolute;
+    left: 99px;
+    margin-top: 50px;
+}
+
+.form__message {
+    margin-top: 35px;
+}
+
 .addit-info {
-    font-family: 'Lato';
-    font-style: 'Light';
+    font-family: 'Lato light';
     font-size: 14px;
     line-height: 138%;
     background-image: none;
@@ -477,4 +549,15 @@ body {
 
 .blue-text {
     color: #005fa3;
+    margin-top: 0;
 }
+
+.swiper-wrapper{
+    
+}
+
+.swiper-button-lock {
+    display: block;
+}
+
+
