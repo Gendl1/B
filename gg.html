@@ -191,31 +191,34 @@
       <div class="container">
         <h2 class="section__title">Наши клиенты</h2>
         <h3 class="section__subtitle ">С нами работают</h3>
-        <ul class="partners-grid">
-          <li class="partners-list-item">
-            <a href="#"> 
-              <img src="./img/partners.png" alt="Партнер"> 
-            </a> 
-          </li>
+        <div class="swiper">
+          <ul class="partners-grid swiper-wrapper">
+            <li class="partners-list-item">
+              <a href="#"> 
+                <img src="./img/partners.png" alt="Партнер"> 
+              </a> 
+            </li>
 
-          <li class="partners-list-item">
-            <a href="#"> 
-              <img src="./img/partners.png" alt="Партнер"> 
-            </a> 
-          </li>
+            <li class="partners-list-item">
+              <a href="#"> 
+                <img src="./img/partners.png" alt="Партнер"> 
+              </a> 
+            </li>
 
-          <li class="partners-list-item">
-            <a href="#"> 
-              <img src="./img/partners.png" alt="Партнер"> 
-            </a> 
-          </li>
+            <li class="partners-list-item">
+              <a href="#"> 
+                <img src="./img/partners.png" alt="Партнер"> 
+              </a> 
+            </li>
 
-          <li class="partners-list-item">
-            <a href="#"> 
-              <img src="./img/partners.png" alt="Партнер"> 
-            </a> 
-          </li>
-        </ul>
+            <li class="partners-list-item">
+              <a href="#"> 
+                <img src="./img/partners.png" alt="Партнер"> 
+              </a> 
+            </li>
+          </ul>
+        </div>
+        
 
         <div class="partners__slider slider">
 
@@ -385,7 +388,6 @@
   <script>
     const swiper = new Swiper('.swiper', {
     // Optional parameters
-    slidesPerView: 1,
     navigation: false,
     direction: 'horizontal',
     loop: true,
