@@ -73,10 +73,6 @@
     justify-content: space-between;
 }
 
-.logo__img {
-
-}
-
 .logo__txt {
     color: #005FA3;
     font-family: 'Merriweather black';
@@ -114,18 +110,10 @@ body {
     gap: 15px;
 }
 
-.info__contacts-img {
-
-}
-
 .info__nav {
     display: flex;
     justify-content: space-between;
     margin-top: 22px;
-}
-
-.nav {
-
 }
 
 .info__nav-links {
@@ -162,10 +150,6 @@ body {
     padding: 170px 0px;
 }
 
-.welcome-slide__container {
-
-}
-
 .welcome-slide__title {
     color:#FFF;
     font-family: 'Merriweather bold';
@@ -193,10 +177,6 @@ body {
     padding: 140px 24px;
 }
 
-.services__container {
-
-}
-
 .services__display-list {
     margin-top: 102px;
 }
@@ -222,10 +202,6 @@ body {
     grid-template-rows: repeat(2,1fr);
     gap: 30px;
     margin-top: 102px;
-}
-
-.card {
-
 }
 
 .card__links {
@@ -416,9 +392,6 @@ body {
     align-items: flex-end;
 }
 
-.slider__arrows {
-}
-
 .slider__arrows-item-prev {
     background: #005FA3;
     border: none;
@@ -451,10 +424,6 @@ body {
     margin-top: 80px;
 }
 
-.feedback-card {
-    
-}
-
 .feedback-card-wrapper {
     background-color: #ebebeb;
     padding: 53px 109px 37px 75px;
@@ -474,10 +443,6 @@ body {
     margin-top: 60px;
     display: flex;
     gap: 35px;
-}
-
-.feedback-card__author-img {
-
 }
 
 .feedback-card__author-username {
@@ -500,9 +465,6 @@ body {
     align-items: center;
 }
 
-.feedback-card__author-info-display {
-
-}
 
 .feedback__slider {
     margin-top: 50px;
@@ -571,10 +533,6 @@ body {
     line-height: 138%;
 }
 
-.description__mail {
-
-}
-
 .contacts__form {
     width: 554px;
     position: relative;
@@ -592,10 +550,6 @@ body {
     line-height: 138%;
 }
 
-.form {
-
-}
-
 .form__user {
     display: flex;
     gap: 30px;
@@ -607,12 +561,6 @@ body {
     font-family: "Lato regular";
     font-size: 16px;
     line-height: 138%;
-}
-
-.user__name {
-}
-
-.user__surname {
 }
 
 .user__input {
@@ -688,14 +636,6 @@ select:focus {
 .blue-text {
     color: #005fa3;
     margin-top: 0;
-}
-
-.swiper {
-    
-}
-
-.swiper-wrapper{
-    
 }
 
 .slider__arrows {
