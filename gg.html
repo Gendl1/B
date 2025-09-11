@@ -186,6 +186,61 @@
       </div>
     </section>
 
+
+    <section class="partners ">
+      <div class="container">
+        <h2 class="section__title">Наши клиенты</h2>
+        <h3 class="section__subtitle ">С нами работают</h3>
+        <div class="swiper swiper2">
+          <div class=" swiper-wrapper">
+
+            <div class="swiper-slide">
+              <a href="#"> 
+                <img src="./img/partners.png" alt="Партнер"> 
+              </a> 
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#"> 
+                <img src="./img/partners.png" alt="Партнер"> 
+              </a> 
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#"> 
+                <img src="./img/partners.png" alt="Партнер"> 
+              </a> 
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#"> 
+                <img src="./img/partners.png" alt="Партнер"> 
+              </a> 
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#"> 
+                <img src="./img/partners.png" alt="Партнер"> 
+              </a> 
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#"> 
+                <img src="./img/partners.png" alt="Партнер"> 
+              </a> 
+            </div>
+          </div>
+
+          <div class="slider__arrows">
+            <button type="button" class="swiper-button-prev2 slider__arrows-item-prev"><img src="./img/arrow_back.svg" alt="arrow_back"></button>
+          <button type="button" class="swiper-button-next2 slider__arrows-item-next "><img src="./img/arrow_forward.svg" alt="arrow_forward"></button>
+          </div>
+
+          <div class="swiper-pagination swiper-pagination2"></div>
+        </div>
+      </div>
+    </section>
+
     <section class="partners ">
       <div class="container">
         <h2 class="section__title">Наши клиенты</h2>
@@ -491,8 +546,8 @@
     // Optional parameters
     navigation: false,
     direction: 'horizontal',
-    loop: false,
-    slidesPerView:1,
+    loop: true,
+    slidesPerView:4,
 
     // If we need pagination
     pagination: {
@@ -503,6 +558,27 @@
     navigation: {
         nextEl: '.swiper-button-next1 .swiper-button-next',
         prevEl: '.swiper-button-prev1 .swiper-button-prev',
+    },
+    });
+  </script>
+
+  <script>
+    const swiper2 = new Swiper('.swiper2', {
+    // Optional parameters
+    navigation: false,
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView:4,
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination2 .swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next2 .swiper-button-next',
+        prevEl: '.swiper-button-prev2 .swiper-button-prev',
     },
     });
   </script>
