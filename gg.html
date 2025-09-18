@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
   
-
   <title>Бухгалтерские услуги</title>
 </head>
 
@@ -78,6 +77,20 @@
       </nav>
     </div>
     
+    <nav class="burger-nav">
+        <ul class="burger-nav__list">
+          <li class="burger-nav__list-item">Главная</li>
+          <li class="burger-nav__list-item">Услуги</li>
+          <li class="burger-nav__list-item">Кейсы</li>
+          <li class="burger-nav__list-item">О компании</li>
+          <li class="burger-nav__list-item">Контакты</li>
+        </ul>
+    </nav>
+
+    <div class="burger">
+      <span class="burger__line"></span>
+    </div>
+
   </header>
 
 
@@ -191,14 +204,8 @@
       <div class="container">
         <h2 class="section__title">Наши клиенты</h2>
         <h3 class="section__subtitle ">С нами работают</h3>
-        <div class="swiper swiper2">
+        <div class="swiper swiper2" id="my-swiper1">
           <div class=" swiper-wrapper">
-
-            <div class="swiper-slide">
-              <a href="#"> 
-                <img src="./img/partners.png" alt="Партнер"> 
-              </a> 
-            </div>
 
             <div class="swiper-slide">
               <a href="#"> 
@@ -241,141 +248,10 @@
       </div>
     </section>
 
-    <section class="partners ">
-      <div class="container">
-        <h2 class="section__title">Наши клиенты</h2>
-        <h3 class="section__subtitle ">С нами работают</h3>
-        <div class="swiper swiper1">
-          <div class=" swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="partners-grid">
-                <div class="partners-list-item">
-                  <a href="#"> 
-                    <img src="./img/partners.png" alt="Партнер"> 
-                  </a> 
-                </div>
-
-                <div class="partners-list-item">
-                  <a href="#"> 
-                    <img src="./img/partners.png" alt="Партнер"> 
-                  </a> 
-                </div>
-
-                <div class="partners-list-item">
-                  <a href="#"> 
-                    <img src="./img/partners.png" alt="Партнер"> 
-                  </a> 
-                </div>
-
-                <div class="partners-list-item">
-                  <a href="#"> 
-                    <img src="./img/partners.png" alt="Партнер"> 
-                  </a> 
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="partners-grid">
-                <div class="partners-list-item">
-                  <a href="#"> 
-                    <img src="./img/partners.png" alt="Партнер"> 
-                  </a> 
-                </div>
-
-                <div class="partners-list-item">
-                  <a href="#"> 
-                    <img src="./img/partners.png" alt="Партнер"> 
-                  </a> 
-                </div>
-
-                <div class="partners-list-item">
-                  <a href="#"> 
-                    <img src="./img/partners.png" alt="Партнер"> 
-                  </a> 
-                </div>
-
-                <div class="partners-list-item">
-                  <a href="#"> 
-                    <img src="./img/partners.png" alt="Партнер"> 
-                  </a> 
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="partners-grid">
-                <div class="partners-list-item">
-                  <a href="#"> 
-                    <img src="./img/partners.png" alt="Партнер"> 
-                  </a> 
-                </div>
-
-                <div class="partners-list-item">
-                  <a href="#"> 
-                    <img src="./img/partners.png" alt="Партнер"> 
-                  </a> 
-                </div>
-
-                <div class="partners-list-item">
-                  <a href="#"> 
-                    <img src="./img/partners.png" alt="Партнер"> 
-                  </a> 
-                </div>
-
-                <div class="partners-list-item">
-                  <a href="#"> 
-                    <img src="./img/partners.png" alt="Партнер"> 
-                  </a> 
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="partners-grid">
-                <div class="partners-list-item">
-                  <a href="#"> 
-                    <img src="./img/partners.png" alt="Партнер"> 
-                  </a> 
-                </div>
-
-                <div class="partners-list-item">
-                  <a href="#"> 
-                    <img src="./img/partners.png" alt="Партнер"> 
-                  </a> 
-                </div>
-
-                <div class="partners-list-item">
-                  <a href="#"> 
-                    <img src="./img/partners.png" alt="Партнер"> 
-                  </a> 
-                </div>
-
-                <div class="partners-list-item">
-                  <a href="#"> 
-                    <img src="./img/partners.png" alt="Партнер"> 
-                  </a> 
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="slider__arrows">
-            <button type="button" class="swiper-button-prev slider__arrows-item-prev"><img src="./img/arrow_back.svg" alt="arrow_back"></button>
-          <button type="button" class="swiper-button-next slider__arrows-item-next "><img src="./img/arrow_forward.svg" alt="arrow_forward"></button>
-          </div>
-
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </section>
-
     <section class="feedback container">
       <h2 class="section__title">Отзывы</h2>
       <h3 class="section__subtitle feedback__subtitle" >Ваши благодарности</h3>
-      <div class="swiper">
+      <div class="swiper" id="my-swiper2">
         <div class="feedback-card-list swiper-wrapper">
           <div class="feedback-card swiper-slide">
             <div class="feedback-card-wrapper">
@@ -542,45 +418,48 @@
   </script>
 
   <script>
-    const swiper1 = new Swiper('.swiper1', {
-    // Optional parameters
-    navigation: false,
-    direction: 'horizontal',
-    loop: true,
-    slidesPerView:4,
-
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination1 .swiper-pagination',
-    },
-
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next1 .swiper-button-next',
-        prevEl: '.swiper-button-prev1 .swiper-button-prev',
-    },
-    });
-  </script>
-
-  <script>
     const swiper2 = new Swiper('.swiper2', {
     // Optional parameters
     navigation: false,
     direction: 'horizontal',
     loop: true,
     slidesPerView:4,
+    spaceBetween: 32,
 
     // If we need pagination
     pagination: {
-        el: '.swiper-pagination2 .swiper-pagination',
+        el: '.swiper-pagination2',
+
     },
 
     // Navigation arrows
     navigation: {
-        nextEl: '.swiper-button-next2 .swiper-button-next',
-        prevEl: '.swiper-button-prev2 .swiper-button-prev',
+        nextEl: '.swiper-button-next2',
+        prevEl: '.swiper-button-prev2',
     },
+
+    breakpoints: {
+
+      1024: {
+        slidesPerView: 4
+      },
+      768: {
+        slidesPerView: 3
+      },
+      0: {
+        slidesPerView: 2
+      }
+    }
     });
+
+    
+  </script>
+
+  <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.burger-nav').classList.toggle('open');
+        })
   </script>
 
 </html>
